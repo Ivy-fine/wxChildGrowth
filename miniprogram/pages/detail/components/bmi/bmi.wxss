@@ -1,0 +1,26 @@
+.wrap{
+  padding:16rpx 28rpx;
+}
+.title {
+  font-size: 36rpx;
+  color: rgba(255, 68, 68, 1);
+  line-height: 50rpx;
+  margin-bottom: 39rpx;
+}
+.curve {
+  width: 677rpx;
+  height: 329rpx;
+  margin-bottom: 58rpx;
+  font-size: 28rpx;
+}
+.suggest .item-title {
+  font-weight: bold;
+  font-size: 30rpx;
+  margin-top: 38rpx;
+}
+
+.suggest text {
+  font-size: 28rpx;
+  line-height: 1.75;
+  display: block;
+}

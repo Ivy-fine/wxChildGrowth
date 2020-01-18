@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bmi-report":"./components/bmi/bmi",
+    "height-report":"./components/height/height"
+  }
+}

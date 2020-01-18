@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="tabBar">
+    <text wx:for="{{tablist}}" wx:key="{{item.name}}" class="{{item.name===curTab?'active':''}}" bindtap="bindTabChange" data-name="{{item.name}}">
+      {{item.text}}
+    </text>
+  </view>
+  <ff-canvas id="height-dom" canvas-id="height" opts="{{heightOpts }}"></ff-canvas>
+  <!-- <ff-canvas id="weight-dom" canvas-id="weight" opts="{{weightOpts }}" wx:else></ff-canvas> -->
+</view>

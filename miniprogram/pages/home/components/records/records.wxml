@@ -1,0 +1,17 @@
+<view class="record" hidden="{{!show}}">
+  <view class="title">我的记录</view>
+  <view wx:for="{{records}}" wx:key="{{item.rid}}" class="record-item">
+    <view class="content">
+      <view class="content-line">
+        <text class="statu">正常</text>
+        <text class="time">{{item.nowDate}}</text>
+      </view>
+      <view>
+        <text>{{item.nowHeight}}cm</text>
+        <text>{{item.nowWeight}}kg</text>
+        <text class="edit">修改</text>
+      </view>
+    </view>
+    <button bindtap="goDetail" class="toDetail" data-rid="{{item._id}}">查看详情</button>
+  </view>
+</view>

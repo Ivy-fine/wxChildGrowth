@@ -1,0 +1,57 @@
+<form bindsubmit="formSubmit" class="childForm">
+  <view class="formArea" hidden="{{!newChildFlag}}">
+    <view class="formtitle">基本信息</view>
+    <view class="section">
+      <view class="section-title">宝宝姓名</view>
+      <input name="name" placeholder="请输入宝宝姓名" />
+    </view>
+    <view class="section">
+     <view class="section-title">性别</view>
+      <radio-group name="gender">
+        <label><radio value="1"/>男</label>
+        <label><radio value="0"/>女</label>
+      </radio-group>
+    </view>
+    <view class="section">
+      <view class="section-title">生日</view>
+        <picker mode="date" name="birthday" valule="{{childInfo.birthday}}" bindchange="bindBirthdayChange">
+          <view class="picker">
+              {{childInfo.birthday}}
+          </view>
+        </picker>
+    </view>
+    <view class="section">
+      <view class="section-title">宝爸身高</view>
+        <input name="dadHeight" placeholder="请输入宝爸身高(cm)" />
+    </view>
+    <view class="section">
+      <view class="section-title">宝妈身高</view>
+      <input name="momHeight" placeholder="请输入宝妈身高(cm)" />
+    </view>
+    <view class="form-tips">输入父母身高可计算孩子遗传身高</view>
+  </view>
+  <view class="formArea">
+    <view class="formtitle">当前测量</view>
+    <view class="section">
+      <view class="section-title">当前身高</view>
+        <input name="nowHeight" placeholder="请输入当前身高(cm)" />
+    </view>
+    <view class="section">
+      <view class="section-title">当前体重</view>
+      <input name="nowWeight" placeholder="请输入当前体重(kg)" />
+    </view>
+    <view class="section">
+      <view class="section-title">测量日期</view>
+        <picker mode="date" name="nowDate" valule="{{nowDate}}" bindchange="bindDateChange">
+          <view class="picker">
+              {{nowDate}}
+          </view>
+        </picker>
+    </view>
+    <view class="form-tips">定期测量身高体重，了解儿童生长发育曲线</view>
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit" class="red">提交评估</button>
+  </view>
+</form>

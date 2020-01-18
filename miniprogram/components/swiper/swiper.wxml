@@ -1,0 +1,10 @@
+ <swiper class="swiper" bindchange="bindSwiperChange" next-margin="500rpx">
+    <block wx:for="{{children}}" wx:key="{{item.cid}}">
+      <swiper-item class="swiper-item {{index===curIndex?'active':''}}">
+        <view>
+          <image src="{{imgUrl}}" class="avatar"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>

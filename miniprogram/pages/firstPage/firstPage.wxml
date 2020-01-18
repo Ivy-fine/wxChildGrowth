@@ -1,0 +1,6 @@
+<!--miniprogram/pages/firstPage/firstPage.wxml-->
+<view class="firstPage">
+  <image class="firstImg" src="../../images/first.jpg"></image>
+  <view class="msg">输入宝宝身高/体重/出生日期，和心宝一起看宝宝的生长发育情况吧</view>
+  <button class="red" bindtap="goTest" open-type="getUserInfo">开始测评</button>
+</view>

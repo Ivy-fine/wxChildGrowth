@@ -1,0 +1,17 @@
+<view class="wrap" hidden="{{!show}}">
+  <view class="title"> 身高评估结果：
+    <text>{{report.title}}</text>
+  </view>
+  <view class="title">
+    遗传身高：
+    <text>{{report.heredity}}cm</text>
+  </view>
+  <view class="curve">
+    <ff-canvas id="height-detail-dom" canvas-id="height-detail" opts="{{opts}}"></ff-canvas>
+  </view>
+  <view class="suggest" wx:for="{{report.content}}" wx:key="{{index}}">
+    <view class="item-title">{{item.title}}</view>
+    <text>{{item.content}}</text>
+    <text wx:if="{{item.age}}">{{item.ageSuggest}}</text>
+  </view>
+</view>

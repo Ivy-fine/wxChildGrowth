@@ -1,0 +1,33 @@
+/* miniprogram/pages/evaluation/evaluation.wxss */
+.childForm{
+  padding: 0 40rpx;
+}
+.section{
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+ 
+}
+.section input{
+  text-align:right;
+}
+.section label{
+  margin-right: 20rpx;
+}
+.section .picker{
+  color: #666;
+}
+.red{
+  margin-top: 40rpx !important;
+}
+.formtitle {
+  line-height: 104rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.form-tips{
+    color: #fe6e69;
+    font-size: 28rpx;
+}

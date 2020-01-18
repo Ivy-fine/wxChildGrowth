@@ -1,0 +1,38 @@
+.detail{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.tabBar {
+  position: static;
+  height:50rpx;
+  padding-left: 28rpx;
+  padding-top: 22rpx;
+  padding-bottom: 50rpx;
+  color: #767676;
+  line-height: 50rpx;
+  justify-content: flex-start;
+  border-radius: 0;
+}
+.tabBar text {
+  font-size: 28rpx;
+  padding-bottom: 7rpx;
+  border-bottom: 4rpx solid transparent;
+  margin: 0;
+  margin-right: 60rpx;
+}
+.tabBar text.active {
+  color: #000000;
+  border-bottom: 4rpx solid #ff4444;
+}
+scroll-view{
+  flex: 1;
+  background: #fff;
+}
+.goHome {
+  font-size: 28rpx;
+  color: #767676;
+  position: fixed;
+  bottom: 30rpx;
+  right: 30rpx;
+}

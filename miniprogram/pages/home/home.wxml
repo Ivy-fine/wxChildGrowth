@@ -1,0 +1,22 @@
+<view class="home"> 
+  <view class="children">
+    <fn-swiper children="{{children}}" bind:changechild="onChildChange"></fn-swiper>
+  </view>
+  <view class="home-main">
+    <view class="child-info">
+      <view wx:for="{{info}}" wx:key="{{index}}">
+        <view class="info-title">{{item.text}}</view>
+        <view class="info-val">{{item.val}}</view>
+      </view>
+    </view>
+    <records records="{{records}}" show="{{curTab==='Record'}}" cid="{{cid}}"></records>
+    <curve childInd="{{childInd}}" wx:if="{{curTab==='Curve'}}" cid="{{cid}}"></curve>
+  </view>
+  <view class="tabBar">
+    <text wx:for="{{tablist}}" wx:key="{{item.name}}" class="{{item.name===curTab?'active':''}}" bindtap="bindTabChange" data-name="{{item.name}}">
+      {{item.text}}
+    </text>
+  </view>
+  <view class="addChild" bindtap="goEvaluation" data-newchild="{{true}}">+</view>
+  <view class="addRecord" bindtap="goEvaluation" data-newchild="{{false}}">+</view>
+</view>

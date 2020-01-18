@@ -1,0 +1,9 @@
+<view class="wrap" hidden="{{!show}}">
+  <view class="title">体重评估结果:</view>
+  <view class="curve">本次记录体重{{report.weight}}kg {{report.title}}</view>
+  <view class="suggest" wx:for="{{report.content}}" wx:key="{{index}}">
+    <view class="item-title">{{item.title}}</view>
+    <text>{{item.content}}</text>
+    <text wx:if="{{item.age}}">{{item.ageSuggest}}</text>
+  </view>
+</view>

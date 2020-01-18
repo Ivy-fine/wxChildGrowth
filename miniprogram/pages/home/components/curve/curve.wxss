@@ -1,0 +1,32 @@
+/* components/curve/curve.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #fff;
+} 
+ff-canvas{
+  width: 100%;
+  height: 300rpx;
+}
+.tabBar {
+  width: 100%;
+  height:132rpx;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+}
+.tabBar text {
+  font-size: 36rpx;
+  color:  #b1b1ba;
+  padding: 20rpx 0;
+  margin: 0 66rpx;
+  border-bottom:4rpx solid transparent;
+}
+.tabBar text.active {
+  color: #cc80e7;
+  border-bottom-color: #cc80e7;
+}

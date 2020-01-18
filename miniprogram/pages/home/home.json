@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "fn-swiper":"/components/swiper/swiper",
+    "records":"./components/records/records",
+    "curve":"./components/curve/curve"
+  }
+}
